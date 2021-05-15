@@ -1,11 +1,12 @@
 # Drag And Drop Single Element
 
+<img src="https://user-images.githubusercontent.com/37263322/118359664-2e7ea500-b58d-11eb-9c26-10582af6fd47.gif" width="300">
+
 ## İçerik
 
 1. [Kullanılan Teknolojiler](https://github.com/mehmetaydintr/Drag_And_Drop_Single_Element/blob/main/README.md#kullan%C4%B1lan-teknolojiler)
 2. [Proje Tanımı](https://github.com/mehmetaydintr/Drag_And_Drop_Single_Element/blob/main/README.md#proje-tan%C4%B1m%C4%B1)
 3. [Kod Tanımı](https://github.com/mehmetaydintr/Drag_And_Drop_Single_Element/blob/main/README.md#kod-tan%C4%B1m%C4%B1)
-4. [Örnek Ekran Görüntüleri](https://github.com/mehmetaydintr/Drag_And_Drop_Single_Element/blob/main/README.md#%C3%B6rnek-ekran-g%C3%B6r%C3%BCnt%C3%BCleri)
 
 
 ## Kullanılan Teknolojiler
@@ -132,8 +133,4 @@ relativeLayout.setOnDragListener(new View.OnDragListener() {
     }
 });
 ```
-
-## Örnek Ekran Görüntüleri
-
-<img src="https://user-images.githubusercontent.com/37263322/118359664-2e7ea500-b58d-11eb-9c26-10582af6fd47.gif" width="300">
 
