@@ -30,7 +30,7 @@ Bu proje **Drag & Drop** özelliğini kullanıdğım bir Android Mobil Uygulamas
 
 ![1](https://user-images.githubusercontent.com/37263322/118358458-7ef30400-b587-11eb-90a6-def814dde5fd.png)
 
-+ Şimdi Java kodlarına geçebiliriz. İlk olarak gerekli tanımlamalarımızı yapıyoruz. Buttonumuzu daha kolay tanımlayabilmek için etiket oluşturuyoruz `BUTTON_ETIKET`. Relative Layout'u yeniden yapılandırmamız gerekecek bu yüzden `RelativeLayout.LayoutParams` oluşturuyoruz.
++ Şimdi Java kodlarına geçebiliriz. İlk olarak gerekli tanımlamalarımızı yapıyoruz. Buttonumuzu daha kolay tanımlayabilmek için `BUTTON_ETIKET` etiket oluşturuyoruz. Relative Layout'u yeniden yapılandırmamız gerekecek bu yüzden `RelativeLayout.LayoutParams` oluşturuyoruz.
 
 ```
 private Button button;
