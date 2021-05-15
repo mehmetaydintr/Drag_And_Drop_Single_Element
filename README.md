@@ -30,7 +30,7 @@ Bu proje **Drag & Drop** özelliğini kullanıdğım bir Android Mobil Uygulamas
 
 ![1](https://user-images.githubusercontent.com/37263322/118358458-7ef30400-b587-11eb-90a6-def814dde5fd.png)
 
-+ Şimdi Java kodlarına geçebiliriz. İlk olarak gerekli tanımlamalarımızı yapıyoruz. Buttonumuzu daha kolay tanımlayabilmek için `BUTTON_ETIKET` etiket oluşturuyoruz. Relative Layout'u yeniden yapılandırmamız gerekecek bu yüzden `RelativeLayout.LayoutParams` oluşturuyoruz.
++ Şimdi Java kodlarına geçebiliriz. İlk olarak gerekli tanımlamalarımızı yapıyoruz. Buttonumuzu daha kolay tanımlayabilmek için `BUTTON_ETIKET` etiket oluşturuyoruz. Relative Layout'u yeniden yapılandırmamız gerekecek bu yüzden `RelativeLayout.LayoutParams` oluşturuyoruz. **RelativeLayout.LayoutParams**'ı `Relative Layout` kullandığımız için kullanacağız.
 
 ```
 private Button button;
@@ -82,7 +82,7 @@ button.setOnLongClickListener(new View.OnLongClickListener() {
 | **DragEvent.ACTION_DRAG_ENDED** | Drag & Drop işlemi bittiği zaman tetiklenir. |
 | **DragEvent.ACTION_DROP** | Görsel nesne bırakıldığı zaman tetiklenir. |
 
-Drag & Drop işlemi başladığı zaman görsel nesnemizin bilgilerini işlem bittiği zaman kullanmak için `layoutParams` nesnesine atıyoruz. Görsel nesne bırakıldığı zaman ilk olarak görsel nesnenin yeni koordinatlarını `layoutParams` nesnesi üzerinden güncelliyoruz. Yeni bir görsel nesne oluşturuyoruz (Görsel nesne herhangi formatta olabileceği için `View` olarak oluşturuyoruz). Layout'umuzun türü herhangi bir formda olabileceği için `ViewGroup` kullanarak mevcut layoutumuzu tanımlıyoruz ve görsel nesnemizi bu layout içerisinden siliyoruz. Daha sonra yeni bir layout oluşturuyoruz ve içerisine görsel nesnemizi **layoutParams** ile birlikte ekleyip **visibility** özelliğini visible yapıyoruz.
+Drag & Drop işlemi başladığı zaman görsel nesnemizin bilgilerini işlem bittiği zaman kullanmak için `layoutParams` nesnesine atıyoruz. Görsel nesne bırakıldığı zaman ilk olarak görsel nesnenin yeni koordinatlarını `layoutParams` nesnesi üzerinden güncelliyoruz. Görsel nesnemizi yeniden tanımlıyoruz (Görsel nesne herhangi formatta olabileceği için `View` olarak oluşturuyoruz). Layout'umuzun türü herhangi bir formda olabileceği için `ViewGroup` kullanarak mevcut layoutumuzu tanımlıyoruz ve görsel nesnemizi bu layout içerisinden siliyoruz. Daha sonra yeniden bir layout tanımlıyoruz ve içerisine görsel nesnemizi **layoutParams** ile birlikte ekleyip **visibility** özelliğini visible yapıyoruz.
 
 ```
 relativeLayout.setOnDragListener(new View.OnDragListener() {
