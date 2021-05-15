@@ -71,7 +71,7 @@ button.setOnLongClickListener(new View.OnLongClickListener() {
 });
 ```
 
-+ Daha sonra **Relative Layout**umuza  Drag & Drop işlemlerini takip edebilmesi için `setOnDragListener` ekliyoruz. setOnDragListener kendine özgü actionlar barındırmaktadır. `switch case` yapısı kullanarak bu actionlardan faydalanacağız.
++ Daha sonra **Relative Layout**umuza  Drag & Drop işlemlerini takip edebilmesi için `setOnDragListener` ekliyoruz. **setOnDragListener** içerisindeki `onDrag` metodunda `DragEvent` parametresini kullanarak hangi Drag & Drop action'unun gerçekleştiğini ele alabileceğiz. Bunun için `switch case` yapısı kullanarak bu actionlardan faydalanacağız.
 
 | Action | İşlevi |
 |    :---:     |     :---       |
